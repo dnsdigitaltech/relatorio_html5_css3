@@ -65,6 +65,42 @@
             width: 29.7cm;
         }
         
+        .button-return {
+            font-family: Tahoma, Geneva, serif;
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            width: 120px;
+            cursor: pointer;
+        }
+        
+        .button-print {
+            font-family: Tahoma, Geneva, serif;
+            background-color: #6c757d;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            width: 120px;
+            cursor: pointer;
+        }
+        
+        .buttons {
+            float: left;
+            position: fixed;
+            top: 60px
+        }
+        
         .logo {
             margin: 10px;
         }
@@ -72,6 +108,18 @@
 </head>
 
 <body>
+    <div class="buttons">
+        <div>
+            <a href="" class="button-print" title="Imprimir novamente">
+                <img src="img/print-icon.png" width="15"> Imprimir
+            </a>
+        </div>
+        <div>
+            <a href="#" class="button-return" title="Voltar ao sistema">
+                <img src="img/return-icon.png" width="15"> Voltar
+            </a>
+        </div>
+    </div>
     <page size="A4">
         <div id="_VReportHeader" class="transparent">
             <div class="header">
