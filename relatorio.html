@@ -7,9 +7,83 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="vreport/VReport_print.css" media="print" />
     <link rel="stylesheet" type="text/css" href="vreport/VReport_screen.css" media="screen" />
+    <style>
+        body {
+            background: rgb(204, 204, 204);
+            font-family: Tahoma, Geneva, serif;
+            -webkit-print-color-adjust: exact !important;
+        }
+        
+        page {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 0.5cm;
+            background-color: #fff;
+        }
+        
+        page[size="A4"] {
+            width: 29.7cm;
+        }
+        
+        page[size="A4"][layout="landscape"] {
+            width: 29.7cm;
+        }
+        
+        @media print {
+            body,
+            page {
+                margin: 0;
+                box-shadow: 0;
+                width: 100%;
+            }
+        }
+        
+        .header {
+            padding-top: 10px;
+            border-bottom: 1px groove #6c757da3;
+            height: 90px;
+        }
+        
+        #_VReportHeader {
+            font-family: Tahoma, Geneva, sans-serif;
+            font-weight: bold;
+            width: 29.7cm;
+        }
+        
+        #_VReportFooter {
+            font-family: Tahoma, Geneva, sans-serif;
+            width: 29.7cm;
+            border-top: 1px groove #6c757da3;
+            font-size: 12px;
+            padding: 3px 10px;
+        }
+        
+        #_VReportContent {
+            margin-top: 4px;
+            font-family: Tahoma, Geneva, sans-serif;
+            background-color: #fff;
+            width: 29.7cm;
+        }
+    </style>
 </head>
 
 <body>
+    <page size="A4">
+        <div id="_VReportHeader" class="transparent">
+            <div class="header">
+                <div class="logo">
+
+                </div>
+            </div>
+        </div>
+        <div id="_VReportContent">
+
+        </div>
+        <div id="_VReportFooter" class="transparent">
+
+        </div>
+    </page>
+
     <script src="vreport/VReport.js" type="text/javascript"></script>
 </body>
 
