@@ -104,6 +104,32 @@
         .logo {
             margin: 10px;
         }
+        
+        @media print {
+            .link {
+                display: none;
+            }
+            .button-return {
+                display: none;
+            }
+            .button-print {
+                display: none;
+            }
+            /* First page, 10 cm margin on top */
+            @page :first {
+                margin: 2em;
+            }
+            @page :first .fixed-header {
+                margin: 2em;
+            }
+            /* Left pages, a wider margin on the left */
+            @page :left {
+                margin: 2em;
+            }
+            @page :right {
+                margin: 2em;
+            }
+        }
     </style>
 </head>
 
